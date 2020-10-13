@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx webpack-dev-server --mode development --hot",
+    "start": "webpack serve --mode development --hot",
     "build": "npx webpack --mode production",
     "calc": "npx ts-node scripts/calc",
     "lint": "npx eslint --ext .js,.jsx,.ts,.tsx --fix ./",
@@ -75,6 +75,7 @@
     "@types/ws": "^7.2.7",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
+    "@webpack-cli/migrate": "^1.0.1",
     "babel-jest": "^25.5.1",
     "babel-loader": "^8.1.0",
     "babel-plugin-emotion": "^10.0.33",
@@ -106,7 +107,7 @@
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
+    "webpack-cli": "^4.0.0",
     "webpack-dev-server": "^3.11.0",
     "worker-plugin": "^5.0.0"
   },
